@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{{ title }} - my to do list </title>
+    </head>
+    <body>
+        <h1>shoppinng list</h1>
+        {% for order in orders %}
+        <div>
+            <p>
+                {{ order.customer_name }}: <b>{{ order.item }}</b>
+            </p>
+        </div>
+        {% endfor %}
+    </body>
+
+</html>
