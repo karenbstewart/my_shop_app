@@ -8,6 +8,7 @@
         <div>
             <p>
                 {{ order.customer_name }}: <b>{{ order.item }}</b>
+                <button ><a href="/orders/{{orders.index(order)}}">hit for details</a></button>
             </p>
         </div>
         {% endfor %}
